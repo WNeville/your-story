@@ -9,6 +9,40 @@
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body>
-  <p>This is a test. Hello, World!</p>
+  <div id="container">
+    <p>This is a test. Hello, World!</p>
+    <form name="values" action="story.php" method="post">
+      <p>
+        <label>Please enter your first name:</label> 
+        <input type="text" name="firstName">
+      </p>
+      <p>
+        <label>Please enter your gender:</label> 
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female
+      </p>
+      <p>
+        <label>What's your current mood?</label>
+        <input type="radio" name="punctuation" value=".">Neutral
+        <input type="radio" name="punctuation" value="...">Depressed
+        <input type="radio" name="punctuation" value="?">Inquisitive
+        <input type="radio" name="punctuation" value="??">Confused
+        <input type="radio" name="punctuation" value="!">Excited
+        <input type="radio" name="punctuation" value="!!">Ecstatic
+      </p>
+      <p>
+        <label>What's your favorite color?</label>
+        <input type="text" name="color">
+      </p>
+      <p>
+        <input type="submit" value="Submit">
+      </p>
+    </form>
+    <div id="footer">
+      <p>Author: William Neville</p>
+      <p>Made using PHP</p>
+      <p><a href="http://cims.nyu.edu/~wvn204">Back to Assignments</a></p>
+    </div><!--./footer-->
+  </div><!--./container-->
 </body>
 </html>
