@@ -7,11 +7,12 @@
   <meta name="author" content="William Neville">
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <script src="story.js"></script>
 </head>
 <body>
   <div id="container">
     <p>This is a test. Hello, World!</p>
-    <form name="values" action="story.php" method="post">
+    <form name="values" action="story.php" onsubmit="return validateForm()" method="post">
       <p>
         <label>Please enter your first name:</label> 
         <input type="text" name="firstName">
@@ -35,12 +36,19 @@
         <input type="text" name="color">
       </p>
       <p>
+        <label>What's your favorite animal?</label>
+        <input type="text" name="animal">
+      </p>
+      <p>
         <label>Are you feeling swaggy?</label>
         <input type="checkbox" name="swag" value="swaggy"> Yes, so swaggy
       </p>
       <p>
         <input type="submit" value="Submit">
       </p>
+      <div id="errorDiv">
+        <p>&nbsp;</p>
+      </div>
     </form>
     <div id="footer">
       <p>Author: William Neville</p>
