@@ -4,15 +4,15 @@
 function validateForm() {
   var myForm = document.forms["values"];
   var errorMessage = "<p>";
-  if(myForm["firstName"] == null || myForm["firstName"] == "") {
+  if(myForm["firstName"].value == null || myForm["firstName"].value == "") {
     errorMessage += "Please enter a first name.<br>";
   }
   
-  if(myForm["color"] == null || myForm["color"] == "") {
+  if(myForm["color"].value == null || myForm["color"].value == "") {
     errorMessage += "Please enter a color.<br>";
   }
 
-  if(myForm["animal"] == null || myForm["animal"] == "") {
+  if(myForm["animal"].value == null || myForm["animal"].value == "") {
     errorMessage += "Please enter an animal.<br>";
   }
 

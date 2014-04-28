@@ -11,7 +11,6 @@
 </head>
 <body>
   <div id="container">
-    <p>This is a test. Hello, World!</p>
     <form name="values" action="story.php" onsubmit="return validateForm()" method="post">
       <p>
         <label>Please enter your first name:</label> 
@@ -19,12 +18,12 @@
       </p>
       <p>
         <label>Please enter your gender:</label> 
-        <input type="radio" name="gender" value="male" selected>Male
+        <input type="radio" name="gender" value="male" checked>Male
         <input type="radio" name="gender" value="female">Female
       </p>
       <p>
         <label>What's your current mood?</label>
-        <input type="radio" name="punctuation" value="." selected>Neutral
+        <input type="radio" name="punctuation" value="." checked>Neutral
         <input type="radio" name="punctuation" value="...">Depressed
         <input type="radio" name="punctuation" value="?">Inquisitive
         <input type="radio" name="punctuation" value="??">Confused
@@ -38,6 +37,17 @@
       <p>
         <label>What's your favorite animal?</label>
         <input type="text" name="animal">
+      </p>
+      <p>
+        <label>Which of these is scariest to you?</label>
+        <select name="fear">
+          <option value="insect">Insects</option>
+          <option value="shadow">Darkness</option>
+          <option value="dairy farmer">Dairy products</option>
+          <option value="clown">Clowns (eep!)</option>
+          <option value="sparkly vampire">Vampires</option>
+          <option value="peering eye">The NSA</option>
+        </select>
       </p>
       <p>
         <label>Are you feeling swaggy?</label>
