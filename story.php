@@ -2,7 +2,6 @@
 <html>
 <?php include("header.html")?>
 <body>
-  <div id="container">
   <?php
   /* Grab all of our data from the form via $_POST */
   $firstName   = $_POST['firstName'];
@@ -76,9 +75,8 @@
 
   /* Finish up */
   print("Thus, everyone lived happily ever after".$punctuation."<br>\n");
-  print("</p>\n<p><a href=\"index.html\">Try Again?</a></p>");
+  print("</p>\n<p><a href=\"index.html\">Try Again?</a></p></div>");
   ?>
-  </div><!--./container-->
 <?php include("footer.html")?>
 </body>
 </html>
