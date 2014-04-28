@@ -75,7 +75,7 @@
 
   /* Finish up */
   print("Thus, everyone lived happily ever after".$punctuation."<br>\n");
-  print("</p>\n<p><a href=\"index.html\">Try Again?</a></p></div>");
+  print("</p>\n<p><a href=\"index.html\">Try Again?</a></p></div>\n");
   ?>
 <?php include("footer.html")?>
 </body>
